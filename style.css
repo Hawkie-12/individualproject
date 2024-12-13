@@ -92,9 +92,10 @@ span {
 
 .home-img img {
     position: relative;
-    width: 70vw; /* Increase the width */
-    height: auto; /* Keep the aspect ratio */
-    border-radius: 50%; /* Maintain circular shape */
+    width: 40vw; /* Use a percentage of viewport width, but limit it */
+    max-width: 500px; /* Max width to prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Keep circular shape */
     box-shadow: 0 0 25px solid white;
     cursor: pointer;
     transition: 0.2s linear;
@@ -102,9 +103,8 @@ span {
 
 .home-img img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
-    font-size: 1.8rem;
-    font-weight: 500;
 }
+
 
 .social-icons a {
     display: inline-flex;
@@ -361,52 +361,7 @@ footer p {
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #background {
-        padding: 3rem 5%;
-    }
 
-    .box {
-        flex-direction: column; /* Stack text and image on small screens */
-        padding: 5%; /* Add some padding to each section */
-    }
-
-    .box-image {
-        flex: 0 0 100%; /* Image takes full width on small screens */
-    }
-
-    .box-text {
-        padding: 1.5rem; /* Reduce padding for smaller screens */
-    }
-
-    .home {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .home .home-content h1 {
-        font-size: 3rem;
-    }
-
-    .home-content h3 {
-        font-size: 1.8rem;
-    }
-
-    .home-content p {
-        font-size: 1.4rem;
-    }
-
-    .home-img img {
-        width: 80vw;
-        height: auto;
-    }
-
-    nav a {
-        font-size: 1rem;
-        margin-left: 2rem;
-    }
-}
 
 
 
